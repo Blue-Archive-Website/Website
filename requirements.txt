@@ -1,0 +1,15 @@
+# 将 == 替换为 >=，以使用新版本。
+
+# 基本依赖包
+# mkdocs
+# mkdocs-material
+
+# 灯箱，提供沉浸式的图片显示效果
+mkdocs-glightbox
+
+# MkDocs 排除插件，让 `docs` 文件夹中的指定文件不进入构建的站点目录中。
+mkdocs-exclude
+
+# 社交插件及依赖包
+mkdocs-material[imaging]
+mkdocs-social-plugin

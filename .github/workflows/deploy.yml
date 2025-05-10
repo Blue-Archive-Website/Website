@@ -1,0 +1,32 @@
+name: Deploy Docs
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  deploy:
+    name: 部署 MkDocs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: 安装 MkDocs
+        run: pip install mkdocs
+
+      - name: 安装 MkDocs-Material 及扩展
+        # 安装 MkDocs-Material，且安装额外推荐包
+        # - run: pip install mkdocs-material
+        run: pip install "mkdocs-material[recommended]"
+
+      - name: 安装项目依赖
+        run: pip install -r requirements.txt
+
+      - name: 构建检查
+        run: mkdocs build --strict
+
+      - name: 部署 MkDocs
+        run: mkdocs gh-deploy --force
