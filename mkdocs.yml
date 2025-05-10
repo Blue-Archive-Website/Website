@@ -2,13 +2,13 @@
 # MkDocs: https://www.mkdocs.org/user-guide/configuration/
 # MkDocs-Material: https://squidfunk.github.io/mkdocs-material/
 
-site_name: 碧蓝档案 第三方网页项目
+site_name: 碧蓝档案 第三方网站
 site_description: 手机游戏《蔚蓝档案》的第三方网页项目。
-site_url: https://Blue-Archive-Website.github.io/
+site_url: https://bluearchive-website.pages.dev/
 # site_url: http://www.example.com/
 
 #  GitHub Repo link
-repo_url: https://github.com/Blue-Archive-Website/Blue-Archive-Website.github.io/
+repo_url: https://github.com/Blue-Archive-Website/Website/
 repo_name: 在 GitHub 上查看
 
 theme:
@@ -23,6 +23,7 @@ theme:
     - navigation.expand 
     - tabs 
     # - navigation.footer # 自定义页脚（显示上一页和下一页的链接）
+    - navigation.tabs # 将菜单呈现在位于上述视口标题下方的菜单层中。
 
   # 提供切换 日间 / 夜间 模式的选项
   palette:
@@ -63,7 +64,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-  - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
+  # - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
   - nl2br # newline-to-break 
   - toc:
       permalink: '#' # heading anchor 
@@ -93,6 +94,15 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist
   - pymdownx.tilde
+
+  # Tab 选项卡支持
+  # - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  # 网格卡片
+  # - attr_list
+  - md_in_html
 
 plugins:
   - search
