@@ -7,6 +7,9 @@
 # 灯箱，提供沉浸式的图片显示效果
 mkdocs-glightbox
 
+# 在页面底部显示 Git 编辑日期信息
+mkdocs-git-revision-date-localized-plugin
+
 # MkDocs 排除插件，让 `docs` 文件夹中的指定文件不进入构建的站点目录中。
 mkdocs-exclude
 

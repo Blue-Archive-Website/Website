@@ -114,6 +114,11 @@ plugins:
   # 灯箱，提供沉浸式的图片显示效果
   - glightbox
 
+  # 在页面底部显示 Git 编辑日期信息
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: iso_datetime
+
   - social: # 社交卡片 插件
       cards_layout_options:
         # 中文字体，解决默认字体无 CJK 字符的问题
