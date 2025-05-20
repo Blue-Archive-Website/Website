@@ -2,14 +2,18 @@
 # MkDocs: https://www.mkdocs.org/user-guide/configuration/
 # MkDocs-Material: https://squidfunk.github.io/mkdocs-material/
 
-site_name: 碧蓝档案 第三方网站
-site_description: 手机游戏《蔚蓝档案》的第三方网页项目。
+site_name: 碧蓝档案 民间网站
+site_description: 手机游戏《蔚蓝档案》的民间网页项目。
 site_url: https://bluearchive-website.pages.dev/
 # site_url: http://www.example.com/
 
 #  GitHub Repo link
 repo_url: https://github.com/Blue-Archive-Website/Website/
 repo_name: 在 GitHub 上查看
+
+# 自定义导航栏
+nav:
+  - 首页: index.md
 
 theme:
   name: material
@@ -118,6 +122,8 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: iso_datetime
+      # 设置时区
+      timezone: Asia/Shanghai
 
   - social: # 社交卡片 插件
       cards_layout_options:
