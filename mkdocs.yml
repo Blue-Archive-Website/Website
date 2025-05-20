@@ -18,6 +18,9 @@ nav:
 theme:
   name: material
 
+  # 扩展 MkDocs-Material 主题
+  custom_dir: overrides
+
   # 设置站点徽标与标签页图标，支持 PNG 与 SVG
   logo: img/favicon.png
   favicon: img/favicon.ico
