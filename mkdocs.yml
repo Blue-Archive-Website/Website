@@ -63,6 +63,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Blue-Archive-Website/
 
+  # 配置站点分析
+  analytics:
+    provider: google
+    property: G-58M9KRDV23
+
 markdown_extensions: 
   - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
 
