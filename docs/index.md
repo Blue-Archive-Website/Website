@@ -40,7 +40,7 @@ hide:
     * [NexonLauncher](https://www.nexon.com/main/en/Blue%20Archive/details)
     * [Play Store](https://play.google.com/store/apps/details?id=com.nexon.bluearchive)
     * [App store](https://apps.apple.com/app/id1571873795)
-    * Steam: 即将推出[^1]。
+    * [Steam](https://store.steampowered.com/app/3557620/): 即将推出[^1]。
 
     [^1]: 来源于 [本视频](https://www.youtube.com/watch?v=v2JXRdbMBMM&t=12582s) 的 `03:29:55` 左右。
 
