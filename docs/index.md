@@ -42,9 +42,11 @@ hide:
     * [NexonLauncher](https://www.nexon.com/main/en/Blue%20Archive/details)
     * [Play Store](https://play.google.com/store/apps/details?id=com.nexon.bluearchive)
     * [App Store](https://apps.apple.com/app/id1571873795)
-    * [Steam](https://store.steampowered.com/app/3557620/): 即将推出[^1]。
+    * [Steam](https://store.steampowered.com/app/3557620/): 即将推出 [^1] [^2]。
 
     [^1]: 来源于 [本视频](https://www.youtube.com/watch?v=v2JXRdbMBMM&t=12582s) 的 `03:29:55` 左右。
+
+    [^2]: Steam 账号地区为 **中国大陆 / 日本** 的用户可能无法将此游戏添加到库中。
 
 === "国服"
 
@@ -55,9 +57,9 @@ hide:
     * [官网](https://bluearchive-cn.com/)
     * [App Store](https://apps.apple.com/cn/app/%E8%94%9A%E8%93%9D%E6%A1%A3%E6%A1%88/id6447541184)
     * [TapTap](https://www.taptap.cn/app/316964)
-    * [哔哩哔哩游戏](https://www.biligame.com/detail/?id=109864)[^2]
+    * [哔哩哔哩游戏](https://www.biligame.com/detail/?id=109864) [^3]
 
-    [^2]: 从此渠道下载的游戏与官方服务器（简称官服）账号数据、权益等不互通。（**渠道服**）
+    [^3]: 从此渠道下载的游戏与官方服务器（简称官服）账号数据、权益等不互通。（**渠道服**）
 
 ---
 
@@ -96,3 +98,7 @@ hide:
 **本网站为非盈利站点。**
 
 本站与 **ブルーアーカイブ**、**Yostar**、**Nexon** 以及 **Nexon Games** 没有任何形式的关联。
+
+---
+
+本站使用 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 构建，托管于 [Cloudflare Pages](https://pages.cloudflare.com/)。
