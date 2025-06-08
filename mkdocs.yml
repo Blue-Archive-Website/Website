@@ -126,10 +126,13 @@ plugins:
   # 灯箱，提供沉浸式的图片显示效果
   - glightbox
 
-  # 在页面底部显示 Git 编辑日期信息
+  # 在页面底部显示 Git 编辑日期信息(需要进行一些配置，具体参见 https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/ 文档。)
+  # 如果站点托管在 Cloudflare Pages，则参阅 https://pumpkinjui.pages.dev/blog/2025/03/22/pages_fetch_depth.html 。
   - git-revision-date-localized:
-      # 页面创建时间不知为何在站点部署后就错误了（和页面修改时间一致），而运行 `mkdocs serve` 则不会出现这种情况。
-      # enable_creation_date: true
+      enable_creation_date: true
+      # 默认值为 `false`。当 Git 不可用时，启用此选项将回退到执行 `mkdocs build` 命令时的时间戳作为修订日期。这意味着修订日期可能不准确，但如果您希望项目在没有 Git 访问权限的环境中也能成功构建，这种处理方式是可接受的。
+      fallback_to_build_date: true
+
       type: iso_datetime
       # 设置时区
       timezone: Asia/Shanghai
