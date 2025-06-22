@@ -1,8 +1,8 @@
 ---
 title: 才羽绿
 
-hide:
-  - navigation
+# hide:
+  # - navigation
   # 隐藏目录，不推荐。
   # - toc 
 
@@ -10,19 +10,10 @@ hide:
 
 # 才羽绿
 
-## 一些话
+## 快速跳转
 
-今天是 `2025-05-20`，情人节（虽然是网络情人节）。虽然这个节日和我没什么关系，但是我还是想说：
-
-<div align="center">
-    <h1 style="color: #64cc2b"><strong>才羽绿，我爱你！</strong></h1>
-</div>
-
-仅以此页面表达我对小绿的喜欢。
-
----
-
-[了解该角色](https://kivo.wiki/data/character/27)
+* [了解该角色](https://kivo.wiki/data/character/27)
+* [“卑一个字，不及她的万分之一”](./Article/2025-05-17_22-33_Midori.md)
 
 ---
 

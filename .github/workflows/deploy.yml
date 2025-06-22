@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 设置 `fetch-depth: 0` 即为获取所有分支和标签的所有提交历史记录。
+          fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x

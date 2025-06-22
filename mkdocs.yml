@@ -7,13 +7,21 @@ site_description: 手机游戏《蔚蓝档案》的民间网页项目。
 site_url: https://bluearchive-website.pages.dev/
 # site_url: http://www.example.com/
 
-#  GitHub Repo link
+# GitHub Repo link
 repo_url: https://github.com/Blue-Archive-Website/Website/
 repo_name: 在 GitHub 上查看
+# 如果存储库 URL 指向有效的 GitHub、GitLab 或 Bitbucket 存储库， 则 MkDocs 会提供一个名为 `edit_uri` 的设置，该设置将解析为托管文档的子文件夹。
+edit_uri: edit/main/docs/
 
 # 自定义导航栏
 nav:
   - 首页: index.md
+  - 角色列表:
+    - 'Characters/index.md'
+    - 才羽绿: 
+      - 'Characters/Saiba-Midori/index.md'
+      - 文章:
+        - 'Characters/Saiba-Midori/Article/2025-05-17_22-33_Midori.md'
 
 theme:
   name: material
@@ -27,10 +35,29 @@ theme:
 
   language: zh # 中文，解决中文搜索问题
   features:
-    - navigation.expand 
-    - tabs 
-    # - navigation.footer # 自定义页脚（显示上一页和下一页的链接）
-    - navigation.tabs # 将菜单呈现在位于上述视口标题下方的菜单层中。
+    - navigation.expand
+    - tabs
+
+    # 自定义页脚（显示上一页和下一页的链接）
+    # - navigation.footer
+
+    # 将菜单呈现在位于上述视口标题下方的菜单层中。
+    - navigation.tabs
+
+    # 如果 repo_url 和 edit_uri 配置正确，则可以添加此按钮
+    # 查看页面源代码
+    - content.action.view
+    # 编辑页面
+    - content.action.edit
+
+    # 启用部分后，对于超过 1220 像素的视口，顶级部分将在侧边栏中呈现为组，但在移动设备上保持原样。
+    - navigation.sections
+
+    # 启用区域索引页面后，文档可以直接附加到区域，这对于提供概述页面特别有用。
+    - navigation.indexes
+
+    # 当用户向下滚动后再次开始向上滚动时，可以显示返回顶部按钮。它呈现在标题的正下方。
+    - navigation.top
 
   # 提供切换 日间 / 夜间 模式的选项
   palette:
@@ -100,10 +127,11 @@ markdown_extensions:
   # - pymdownx.emoji:
       # emoji_generator: !!python/name:pymdownx.emoji.to_png
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  # - pymdownx.superfences
   - pymdownx.tasklist
   - pymdownx.tilde
 
@@ -111,6 +139,13 @@ markdown_extensions:
   # - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+
+  # 流程图支持
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
   # 网格卡片
   # - attr_list
@@ -126,10 +161,13 @@ plugins:
   # 灯箱，提供沉浸式的图片显示效果
   - glightbox
 
-  # 在页面底部显示 Git 编辑日期信息
+  # 在页面底部显示 Git 编辑日期信息(需要进行一些配置，具体参见 https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/ 文档。)
+  # 如果站点托管在 Cloudflare Pages，则参阅 https://pumpkinjui.pages.dev/blog/2025/03/22/pages_fetch_depth.html 。
   - git-revision-date-localized:
-      # 页面创建时间不知为何在站点部署后就错误了（和页面修改时间一致），而运行 `mkdocs serve` 则不会出现这种情况。
-      # enable_creation_date: true
+      enable_creation_date: true
+      # 默认值为 `false`。当 Git 不可用时，启用此选项将回退到执行 `mkdocs build` 命令时的时间戳作为修订日期。这意味着修订日期可能不准确，但如果您希望项目在没有 Git 访问权限的环境中也能成功构建，这种处理方式是可接受的。
+      fallback_to_build_date: true
+
       type: iso_datetime
       # 设置时区
       timezone: Asia/Shanghai
