@@ -42,7 +42,7 @@ hide:
     * [NexonLauncher](https://www.nexon.com/main/en/Blue%20Archive/details)
     * [Play Store](https://play.google.com/store/apps/details?id=com.nexon.bluearchive)
     * [App Store](https://apps.apple.com/app/id1571873795)
-    * [Steam](https://store.steampowered.com/app/3557620/): 即将推出 [^1] [^2]。
+    * [Steam](https://store.steampowered.com/app/3557620/) [^1] [^2]
 
     [^1]: 来源于 [本视频](https://www.youtube.com/watch?v=v2JXRdbMBMM&t=12582s) 的 `03:29:55` 左右。
 
@@ -81,7 +81,7 @@ hide:
 
     ---
 
-    整理游戏相关资料的网站。
+    整理游戏相关资料（角色相关信息、立绘差分、语音 等）的网站。
 
     [:octicons-arrow-right-24: 点击进入](https://kivo.wiki/)
 
